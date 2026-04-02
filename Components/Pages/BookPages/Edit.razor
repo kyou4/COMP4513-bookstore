@@ -76,7 +76,7 @@ else
 }
 
 <div>
-    <a href="/books">Back to List</a>
+    <a href="/">Back to List</a>
 </div>
 
 @code {
@@ -84,7 +84,7 @@ else
     private int Id { get; set; }
 
     [SupplyParameterFromForm]
-    private Book? Book { get; set; }
+    private Book Book { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
